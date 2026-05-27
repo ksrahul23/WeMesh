@@ -50,7 +50,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ['https://adroit-anuj.github.io', 'http://localhost:3000'],
+    origin: ['https://ksrahul23.github.io', 'http://localhost:3000'],
     methods: ['GET', 'POST'],
   },
 });

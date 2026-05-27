@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adroit-anuj.github.io/Decentralized_File_Sharing",
+  "homepage": "https://ksrahul23.github.io/WeMesh",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
