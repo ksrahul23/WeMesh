@@ -3,7 +3,8 @@ import Peer from 'simple-peer';
 import io from 'socket.io-client';
 import CryptoJS from 'crypto-js';
 
-const socket = io('http://localhost:5000', { transports: ['websocket'] });
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+const socket = io(BACKEND_URL, { transports: ['websocket'] });
 
 // Simple MIME type mapping based on extension
 const getMimeType = (filename) => {
