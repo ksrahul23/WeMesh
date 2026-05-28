@@ -5,7 +5,7 @@ const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     // Check localStorage first
-    const saved = localStorage.getItem('sharemesh-theme');
+    const saved = localStorage.getItem('wemesh-theme');
     if (saved === 'light' || saved === 'dark') return saved;
     // Respect system preference on first visit
     if (window.matchMedia?.('(prefers-color-scheme: light)').matches) return 'light';
@@ -14,7 +14,7 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('sharemesh-theme', theme);
+    localStorage.setItem('wemesh-theme', theme);
     // Update meta theme-color for mobile browsers
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) {

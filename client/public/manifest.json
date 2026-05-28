@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "WeMesh",
+  "name": "WeMesh — Decentralized File Sharing",
   "icons": [
     {
       "src": "favicon.ico",
