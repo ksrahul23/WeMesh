@@ -1087,20 +1087,29 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
+  height: 3px;
   background: var(--accent);
   animation: toastProgress 5s linear forwards;
 }
 
+.toast-info .toast-progress { background: var(--info); }
+.toast-success .toast-progress { background: var(--success); }
+.toast-error .toast-progress { background: var(--danger); }
+.toast-warning .toast-progress { background: var(--warning); }
+
 .toast-icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .toast-info .toast-icon { color: var(--info); }
 .toast-success .toast-icon { color: var(--success); }
 .toast-error .toast-icon { color: var(--danger); }
+.toast-warning .toast-icon { color: var(--warning); }
 
 .notification-inline {
   padding: var(--spacing-md) var(--spacing-lg);

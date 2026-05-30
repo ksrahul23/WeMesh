@@ -259,8 +259,6 @@ const useWebRTC = () => {
     socket.on('connect_error', (error) => {
       console.error('Socket connection error:', error);
       setIsSocketConnected(false);
-      setNotification('Failed to connect to server. Please try again.');
-      setTimeout(() => setNotification(null), 5000);
     });
 
     socket.on('usersInRoom', (peersWithNames) => {
